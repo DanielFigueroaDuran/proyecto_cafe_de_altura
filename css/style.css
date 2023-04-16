@@ -1,25 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2? familia = Traje: peso @ 400; 500; 600; 700; 800 yfamily= Poppins:ital,wght@0,100;1,400 & display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit";
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
 }
 
+/* -------------------------------HEADER------------------------------------------ */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 40px;
   background: #2b2a2b;
+  justify-content: space-between;
+  padding: 12px 40px;
+  align-items: center;
 }
 
 h2 {
   font-weight: 400;
   font-size: 23.46px;
-  color: #ffffff;
 }
 
 .logo {
@@ -31,27 +33,56 @@ h2 {
   width: 20.29px;
   height: 24.95px;
   background-image: url(../assets/icon/ps_coffee-hot.png);
-  background-position: bottom;
-  position: relative;
-  top: 2px;
 }
 
-nav {
+.links {
   display: flex;
   font-weight: 600;
   font-size: 14px;
   padding: 8px;
   gap: 20px;
+  transition: all 0.3s ease 0s;
 }
 
-a {
-  text-decoration: none;
+.links a:hover {
+  color: rgb(173, 180, 180);
+}
+
+.tel {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.icon_tel,
+.icon_lock {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .icon_tel {
   width: 18px;
   height: 18px;
   background-image: url(../assets/icon/Phone.png);
-  background-position: bottom;
-  background-size: cover;
 }
+
+.icon_lock {
+  width: 18px;
+  height: 18px;
+  background-image: url("../assets/icon/Default.png");
+}
+
+.button {
+  border: 1px solid #fff;
+  padding: 9px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  background-color: rgb(173, 180, 180);
+}
+
+/*----------------------CARD------------------------------  */
