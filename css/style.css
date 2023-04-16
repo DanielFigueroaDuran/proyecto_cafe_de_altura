@@ -13,15 +13,20 @@
 /* -------------------------------HEADER------------------------------------------ */
 header {
   display: flex;
+  /* position: fixed; */
   background: #2b2a2b;
   justify-content: space-between;
-  padding: 12px 40px;
+  flex-direction: row;
   align-items: center;
+  padding: 12px 40px;
+  gap: 3px;
 }
 
 h2 {
   font-weight: 400;
   font-size: 23.46px;
+  line-height: 35.19px;
+  opacity: 86%;
 }
 
 .logo {
@@ -32,6 +37,8 @@ h2 {
 .icon_coffee {
   width: 20.29px;
   height: 24.95px;
+  margin-top: 2px;
+  position: relative;
   background-image: url(../assets/icon/ps_coffee-hot.png);
 }
 
@@ -40,7 +47,8 @@ h2 {
   font-weight: 600;
   font-size: 14px;
   padding: 8px;
-  gap: 20px;
+  line-height: 16px;
+  gap: 16px;
   transition: all 0.3s ease 0s;
 }
 
@@ -50,8 +58,12 @@ h2 {
 
 .tel {
   display: flex;
-  align-items: baseline;
-  gap: 20px;
+  margin: 4px 0 0 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  gap: 8px;
 }
 
 .icon_tel,
@@ -61,28 +73,45 @@ h2 {
   background-repeat: no-repeat;
 }
 
+/* .icon_tel {
+  width: 24px;
+  height: 24px;
+} */
+
 .icon_tel {
   width: 18px;
   height: 18px;
+  margin: 3px 0 0 3px;
   background-image: url(../assets/icon/Phone.png);
 }
 
+.button {
+  padding: 12px 24px;
+  background: #515051;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  gap: 8px; /*este gap no funciona*/
+}
+
+/* .icon_lock {
+  width: 24px;
+  height: 24px;
+
+  border: 1px solid red;
+} */
+
 .icon_lock {
-  width: 18px;
-  height: 18px;
+  width: 17.66px;
+  height: 20px;
   background-image: url("../assets/icon/Default.png");
 }
 
-.button {
-  border: 1px solid #fff;
-  padding: 9px 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
 .button:hover {
-  background-color: rgb(173, 180, 180);
+  background-color: rgb(97, 99, 99);
 }
 
 /*----------------------CARD------------------------------  */
