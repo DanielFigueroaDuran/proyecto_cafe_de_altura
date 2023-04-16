@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: #2b2a2b;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 23.46px;
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  gap: 7.33px;
+}
+
+.icon_coffee {
+  width: 20.29px;
+  height: 24.95px;
+  background-image: url(../assets/icon/ps_coffee-hot.png);
+  background-position: bottom;
+  position: relative;
+  top: 2px;
+}
+
+nav {
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon_tel {
+  width: 18px;
+  height: 18px;
+  background-image: url(../assets/icon/Phone.png);
+  background-position: bottom;
+  background-size: cover;
+}
